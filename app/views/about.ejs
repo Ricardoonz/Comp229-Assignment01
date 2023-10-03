@@ -1,46 +1,31 @@
 <%- include ('partials/header.ejs') %>
 <%- include ('partials/main_nav.ejs') %>
 
-   
+<main class="container">
+  <div class="jumbotron">
+    <h1 class="text-center mt-4 mb-4">Ricardo's About Page</h1>
+  </div>
 
-<main class="ontainer">
-<div class="jumbotron">
-    
-    <center><h1><%= title %> Page</center></h1>
-    <center><p>Mxxxx</p></center>
-    <center><p>301235466</p></center>
-    <html>
-    
-        <body style="background-color:pink;">
-    
-            <body>
-              
-            <center><img src="/img/me.png" alt="logo" style: width="150px"; height="150px"></center>
-            
-              <h2>Introduction</h2>
-              <p>Hi, My name is xxxx. I am a Software Engineering Student
-                at Centennial College (Fast Track). This is my 2nd semester and I will be graduating on April 2024.
-                My Bachelor's degree is Commerce major in Management Information Systems. I also have a Master's 
-                degree in Business Administration major in Management. I am a very hardworking and  passionate person.
-                I have 15 years of experience as a Software QA Engineer. I have gained valuable skills and knowledge in 
-                software development and quality assurance through out my career. I have experience with both manual and 
-                automation testing. I also have experience with programming languanges like Jave, C#, and Kotlin.</p>
-                
-                <!-- RESUME -->
-            <div class="p-5 text-center"><h5><a href="xxxxx" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">View Résumé</a></h5></div>
+  <body style="background-color: lightcyan;">
+    <center><img src="/img/ricardo.jpeg" alt="logo" style="width: 150px; height: 150px;"></center>
 
+    <div style="margin: 0 20px;"> <!-- Add margin to create space on the sides -->
+      <h2>Introduction</h2>
+      <p>Hello there! I'm Ricardo, and I'm currently on an exciting journey as a Software Engineering student. My fascination lies in the realm of IoT (Internet of Things) projects, where I get to explore the fusion of technology with the physical world. IoT's potential to connect devices and create smart, efficient systems has always captivated me. I'm deeply committed to learning and creating innovative solutions that bridge the digital and physical divide, making our lives more interconnected and convenient.</p>
+      
+      <p>Beyond the world of code and circuits, I'm an avid gamer. Video games have been a constant source of inspiration and entertainment in my life. They not only offer immersive experiences but also challenge my problem-solving skills and creativity. Whether I'm exploring vast virtual worlds or competing in multiplayer battles, I find endless joy and a sense of accomplishment in gaming.</p>
+      
+      <p>Combining my passion for IoT with my love for video games, I aspire to explore the exciting intersections of these two worlds, perhaps even developing gaming-related IoT projects that enhance the gaming experience. In this journey, I'm always eager to learn, collaborate, and push the boundaries of what technology can achieve.</p>
+      
+      <p>Feel free to explore my portfolio to see how I'm blending my passions and skills to create meaningful and innovative projects.</p>
+    </div>
 
-              <h2>Education</h2>
-              <p>UNDERGRADUATE: I graduated from xxxxxxxx with a degree in Commerce Major In Management Information Systems</p>
-               <p>GRADUATE: I graduated from xxxx in New York USA with a Master's Degree in Business Administration Major in Management</p>
+    <!-- RESUME -->
+    <div class="p-5 text-center">
+      <h5><a href="xxxxx" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Click here to view my Resumé!</a></h5>
+    </div>
 
-                
-              
-              
-
-      <%- include ('partials/bottom_nav.ejs') %>
-      <%- include ('partials/footer.ejs') %>
-
-
-
-   
+    <%- include ('partials/bottom_nav.ejs') %>
+    <%- include ('partials/footer.ejs') %>
+  </body>
+</main>

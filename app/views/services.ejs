@@ -1,78 +1,82 @@
-<%- include ('partials/header.ejs') %>
-<%- include ('partials/main_nav.ejs') %>
+<%- include('partials/header.ejs') %>
+<%- include('partials/main_nav.ejs') %>
 
-    
-
-<main class="ontainer">
-<div class="jumbotron">
-
-    <center><h1>Welcome to <%= title %> Page</h1><center>
-    </div>
+<main class="container">
+  <div class="jumbotron">
+    <center><h1 class="mt-4">Discover the services I can offer!</h1></center>
+  </div>
 </main>
 
-<html>
-    <body style="background-color:pink;">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Services</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: lightcyan;
+    }
     
-        <!DOCTYPE html>
-        <html>
-        <head>
-          <title>My Services</title>
-          <style>
-            body {
-              font-family: Arial, sans-serif;
-              margin: 0;
-              padding: 20px;
-            }
-            
-            h1 {
-              color: #050505;
-            }
-            
-            h2 {
-              color: #050505;
-            }
-            
-            p {
-              color: #070707;
-              line-height: 1.5;
-            }
-          </style>
-        </head>
-        <body>
-          
-          <div class="services">
-   
-            <h2>Quality Assurance</h2>
-            <img src="img/QA.png" alt="QA">
-            <p>My QA service ensures that your software meets the highest quality standards, guaranteeing a seamless user experience and minimizing the risk of defects or issues.</p>
-          </div>
-          
-          <div class="services">
-            
-            <h2>Automation</h2>
-            <img src="img/Automation.png" alt="Automation ">
-            <p>My automation service empowers your business by streamlining processes and increasing efficiency through the implementation of automated solutions. By leveraging advanced technologies, we optimize workflows, reduce manual effort, and enhance productivity, enabling you to focus on strategic initiatives and achieve higher levels of success.</p>
-          </div>
-          
-          <div class="service">
-            
-            <h2>Web Development</h2>
-            <img src="img/Web.png" alt="Web">
-            <p>My Web development service offers innovative solutions tailored to your needs, combining cutting-edge technologies and industry best practices to create visually stunning, responsive, and highly functional websites that drive your business forward.</p>
-          </div>
+    h1, h2 {
+      color: #050505;
+      margin-top: 20px; /* Added margin-top */
+      margin-bottom: 20px; /* Added margin-bottom */
+    }
+    
+    p {
+      color: #070707;
+      line-height: 1.5;
+    }
+    
+    .service {
+      text-align: center;
+      padding: 20px;
+      border: 1px solid #e0e0e0;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
 
-          <div class="services">
-            
-            <h2>IT Solutions</h2>
-            <img src="img/IT.png" alt="IT">
-            <p>My IT solution service provide end-to-end technology solutions that align with your business objectives, ensuring seamless integration, enhanced security, and optimized operations. With our expertise in diverse IT domains, we deliver comprehensive solutions that drive innovation, efficiency, and growth, empowering your organization to thrive in the digital age."</p>
-          </div>
-        </body>
-        </html>
-        
-      <%- include ('partials/bottom_nav.ejs') %>
-      <%- include ('partials/footer.ejs') %>
+    .service img {
+      max-width: 100%;
+      height: auto;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="service">
+          <h2>Web Development</h2>
+          <img src="img/Web.jpeg" alt="Web">
+          <p>I Create captivating and responsive websites that captivate your audience. I blend creativity with cutting-edge technologies to deliver user-friendly and visually stunning web solutions.</p>
+        </div>
+      </div>
 
+      <div class="col-lg-4">
+        <div class="service">
+          <h2>Cybersecurity</h2>
+          <img src="img/cyber.jpeg" alt="Cybersecurity">
+          <p>Protect your digital assets with my top-notch cybersecurity services. We shield your data from threats and breaches, ensuring your business operates in a secure digital environment.</p>
+        </div>
+      </div>
 
+      <div class="col-lg-4">
+        <div class="service">
+          <h2>IoT Solutions</h2>
+          <img src="img/IoT.jpeg" alt="IoT">
+          <p>Transform your business with IoT innovations. Through IoT solutions optimize operations, enhance efficiency, and provide real-time insights, enabling you to stay ahead in a connected world.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-   
+  <%- include('partials/bottom_nav.ejs') %>
+  <%- include('partials/footer.ejs') %>
+</body>
+</html>
